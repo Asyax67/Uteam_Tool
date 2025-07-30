@@ -8,7 +8,11 @@ from datetime import datetime
 import os
 
 # Pfad zur Masterliste
-EXCEL_PATH = r"C:\Users\ASYAKKA\Mercedes-Benz (corpdir.onmicrosoft.com)\DWT_UTeam Werk 10 - General\08_Rotation UTeam\Projekt_UTeam_Digitalisierung\Masterliste_UTeam.xlsx"
+# statt absoluten Pfads
+# EXCEL_PATH = r"C:\Users\…\Masterliste_UTeam.xlsx"
+
+# benutze den relativen Pfad in Deinem Repo:
+EXCEL_PATH = os.path.join(os.path.dirname(__file__), "Masterliste_UTeam.xlsx")
 
 # Ordner, in den die Word‑Dokumente abgelegt werden
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "Vorstellung_Asya_Test")
