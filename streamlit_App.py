@@ -11,11 +11,13 @@ import os
 # statt absoluten Pfads
 # EXCEL_PATH = r"C:\Users\…\Masterliste_UTeam.xlsx"
 
-# benutze den relativen Pfad in Deinem Repo:
-EXCEL_PATH = os.path.join(os.path.dirname(__file__), "Masterliste_UTeam.xlsx")
+# Beispiel in Vorstellung.py
+ONE_DRIVE_ROOT = os.path.expanduser(
+    r"~\OneDrive – Mercedes‑Benz\UTeam\Projekt_UTeam_Digitalisierung"
+)
+EXCEL_PATH  = os.path.join(ONE_DRIVE_ROOT, "Masterliste_UTeam.xlsx")
+OUTPUT_DIR  = os.path.join(ONE_DRIVE_ROOT, "Vorstellung_Asya_Test")
 
-# Ordner, in den die Word‑Dokumente abgelegt werden
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "Vorstellung_Asya_Test")
 
 
 # ─── Sidebar & Navigation ─────────────────────────────────────────────────────
